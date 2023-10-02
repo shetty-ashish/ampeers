@@ -1,0 +1,46 @@
+{
+  "name": "ampeers-fullstack-interview",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.8.1",
+    "fastify": "^4.21.0",
+    "fastify-gql": "^3.9.0",
+    "graphql": "^16.8.0",
+    "mercurius": "^13.1.0",
+    "pino": "^6.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^6.0.7"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
+    "@types/react": "17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "pino-colada": "^1.6.1",
+    "pino-pretty": "^4.0.0",
+    "prettier": "^2.3.2",
+    "react-scripts": "^5.0.1",
+    "typescript": "^5.1.6",
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "startBe": "node --trace-warnings ./src/server/gateway.js | pino-colada"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
